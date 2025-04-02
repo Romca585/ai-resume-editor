@@ -1,3 +1,5 @@
+'''
+
 The idea:
     It wouldn't be the first time I heard someone tell me I need to tailor my resume for each job description in order to increase the chances my resume gets seen.
     While this task is feasible through the use of ChatGPT and manual editing, I thought it would be cool to explore a 1 in many resume editor that allows users to:
