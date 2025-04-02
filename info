@@ -1,0 +1,8 @@
+Need to run this everytime we make a new terminal session or install a new package: source .venv/bin/activate
+
+fastapi dev name.py to launch
+uvicorn app.main:app --reload
+
+
+resumeuser
+resume1234
