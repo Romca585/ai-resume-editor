@@ -56,10 +56,18 @@ def tailor_resume(gpt_resume_text: str, job_description: str) -> str:
     client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
     
     prompt = f"""
-You're a professional resume editor. Take the following resume content and adjust it to better match the job description. Keep the original resume structure, but rephrase experience, skills, and summary sections to align with keywords and requirements from the job. Make sure to not lie about anything. If the user did not mention something in their resume, do not put it in.
+You are a professional resume editor.
 
-Only rewrite the resume. Do not include explanations or extra text.
+Rewrite the resume below to align with the job description.
 
+**Instructions**:
+- Only rewrite the responsibilities - DO NOT ALTER JOB TITLES
+- Keep the original structure of the resume.
+- Only modify wording to better match the job description.
+- Do not fabricate or guess information - this includes adding technologies/languages/skills that are not in the resume already.
+- Use relevant keywords **naturally** in context.
+- Make sure to do this for **ALL** of the entries
+- **Focus more on rewriting action words**
 ---
 Resume:
 {gpt_resume_text}
@@ -69,10 +77,10 @@ Job Description:
 {job_description}
 
 ---
-Edited Resume:
+Tailored Resume:
 
 ---
-Main keywords found in description:
+
 """
 
 
