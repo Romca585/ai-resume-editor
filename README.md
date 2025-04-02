@@ -1,4 +1,4 @@
-'''
+```
 
 The idea:
     It wouldn't be the first time I heard someone tell me I need to tailor my resume for each job description in order to increase the chances my resume gets seen.
@@ -20,4 +20,4 @@ April 1/2: Initial Commit
             - Parsing those resumes into subsections (i.e name, skills, experiences etc.)
             - Allow users to change those sections + glue it back together the way it was.. This might be easier to do on plaintext/docx files first prior to jumping into PDFS
         
-'''
+```
